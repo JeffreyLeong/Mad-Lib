@@ -29,29 +29,29 @@ Sincerely,
 #include <iostream>
 using namespace std;
 
-int main() {
-  string instructor;
-  string user_name;
-  string food;
-  string number;
-  string adjective;
-  string color;
-  string animal;
+int main() { 
+  char instructor[256];
+  char user_name[256];
+  char food[256];
+  int number;
+  char adjective[256];
+  char color[256];
+  char animal[256];
 
   cout << "Please type in the name of your instructor: ";
-  cin >> instructor;
+  cin.getline (instructor,256);
   cout << "Please type in your name: ";
-  cin >> user_name;
+  cin.getline (user_name, 256);
   cout << "Please type in your favorite food: ";
-  cin >> food;
+  cin.getline (food, 256);
+  cout << "Please type in a adjective: ";
+  cin.getline (adjective, 256);
+  cout << "Please type in your favorite color: ";
+  cin.getline (color, 256);
+  cout << "Please type in your favorite animal: ";
+  cin.getline (animal, 256);
   cout << "Pick a number between 100 and 120: ";
   cin >> number;
-  cout << "Please type in a adjective: ";
-  cin >> adjective;
-  cout << "Please type in your favorite color: ";
-  cin >> color;
-  cout << "Please type in your favorite animal: ";
-  cin >> animal;
 
   cout << endl;
   cout << endl;
